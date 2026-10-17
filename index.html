@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <button id="nav-home" class="active">Home</button>
+            <button id="nav-library">Library</button>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">
+                <span class="title-welcome">WELCOME to</span>
+                <span class="title-vverse">THE V-VERSE</span>
+            </h1>
+            <p class="hero-subtitle">Your own universe of fiction written by Author VV.</p>
+            
+            <!-- Hidden on Home, Visible in Library -->
+            <div id="library-filters" class="library-filters-container">
+                <div class="filter-bar">
+                    <button id="btn-search-toggle" class="btn-action">Search</button>
+                    <button id="btn-genre-toggle" class="btn-action">Genres</button>
+                </div>
+
+                <div id="search-box" class="search-box">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search story title or genre...">
+                </div>
+
+                <div id="genre-drawer" class="genre-drawer">
+                    <span class="genre-pill active" data-genre="all">All</span>
+                    <span class="genre-pill" data-genre="romance">Romance</span>
+                    <span class="genre-pill" data-genre="fantasy">Fantasy</span>
+                    <span class="genre-pill" data-genre="mystery">Mystery</span>
+                    <span class="genre-pill" data-genre="thriller">Thriller</span>
+                    <span class="genre-pill" data-genre="horror">Horror</span>
+                    <span class="genre-pill" data-genre="sci-fi">Sci-Fi</span>
+                    <span class="genre-pill" data-genre="adventure">Adventure</span>
+                    <span class="genre-pill" data-genre="college">College</span>
+                    <span class="genre-pill" data-genre="lgbtq">LGBTQ</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <h2 id="section-title" class="section-title">Top 15 Trending Stories</h2>
+            <div class="grid-container">
+
+                <!-- 1. Romance -->
+                <article class="book-card top-story" data-genre="romance">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/romance-cover.jpeg" alt="Romance Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Romance</span>
+                            <h3>Still, It's You</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Two estranged souls meet atop a hill during sunset.</p>
+                            <div class="card-actions">
+                                <a href="romance.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">15.8k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Fantasy -->
+                <article class="book-card top-story" data-genre="fantasy">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/fantasy-cover.jpeg" alt="Fantasy Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Fantasy</span>
+                            <h3>The Last Heir</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A cloaked figure gazes upon a moonlit castle.</p>
+                            <div class="card-actions">
+                                <a href="fantasy.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">18.5k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Mystery -->
+                <article class="book-card top-story" data-genre="mystery">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/mystery-cover.jpeg" alt="Mystery Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Mystery</span>
+                            <h3>The Vanishing Note</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A glowing red doorway holds the final secret.</p>
+                            <div class="card-actions">
+                                <a href="mystery.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">15.2k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Thriller -->
+                <article class="book-card top-story" data-genre="thriller">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/thriller-cover.jpeg" alt="Thriller Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Thriller</span>
+                            <h3>The Silent Threat</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Shattered glass drips with unseen danger.</p>
+                            <div class="card-actions">
+                                <a href="thriller.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">17.1k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Horror -->
+                <article class="book-card top-story" data-genre="horror">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/horror-cover.jpeg" alt="Horror Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Horror</span>
+                            <h3>Blackwell House</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">An ancient mansion beneath a pale moon.</p>
+                            <div class="card-actions">
+                                <a href="horror.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">16.4k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Sci-Fi -->
+                <article class="book-card top-story" data-genre="sci-fi">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/sci-fi-cover.jpeg" alt="Sci-Fi Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Sci-Fi</span>
+                            <h3>Tomorrow's Echoes</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A traveler overlooks a glowing metropolis.</p>
+                            <div class="card-actions">
+                                <a href="sci-fi.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">19.2k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Adventure -->
+                <article class="book-card top-story" data-genre="adventure">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/adventure-cover.jpeg" alt="Adventure Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Adventure</span>
+                            <h3>Beyond Horizon</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A traveler sets sights on unexplored islands.</p>
+                            <div class="card-actions">
+                                <a href="adventure.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">21.5k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Drama -->
+                <article class="book-card top-story" data-genre="drama">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/drama-cover.jpeg" alt="Drama Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Drama</span>
+                            <h3>Broken Still Here</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Raindrops fall on a tear-stained face.</p>
+                            <div class="card-actions">
+                                <a href="drama.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">15.9k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Comedy -->
+                <article class="book-card top-story" data-genre="comedy">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/comedy-cover.jpeg" alt="Comedy Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Comedy</span>
+                            <h3>Accidentally Famous</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A photographer snaps one famous picture.</p>
+                            <div class="card-actions">
+                                <a href="comedy.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">17.3k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Historical -->
+                <article class="book-card top-story" data-genre="historical">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/historical-cover.jpeg" alt="Historical Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Historical</span>
+                            <h3>Royal's Secret</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A noblewoman looks over an ancient kingdom.</p>
+                            <div class="card-actions">
+                                <a href="historical.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">16.8k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Supernatural -->
+                <article class="book-card top-story" data-genre="supernatural">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/supernatural-cover.jpeg" alt="Supernatural Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Supernatural</span>
+                            <h3>Sees Ghosts</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Azure magic illuminates an ethereal forest.</p>
+                            <div class="card-actions">
+                                <a href="supernatural.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">18.1k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Reincarnation -->
+                <article class="book-card top-story" data-genre="reincarnation">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/reincarnation-cover.jpeg" alt="Reincarnation Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Reincarnation</span>
+                            <h3>Again, I Met You</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A maiden remembers her past life's promise.</p>
+                            <div class="card-actions">
+                                <a href="reincarnation.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">17.9k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. LGBTQ+ -->
+                <article class="book-card top-story" data-genre="lgbtq">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/LGBTQ-cover.jpeg" alt="LGBTQ+ Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">LGBTQ+</span>
+                            <h3>Different Hearts</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Two women share a moment against sunset.</p>
+                            <div class="card-actions">
+                                <a href="LGBTQ.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">20.4k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Paranormal -->
+                <article class="book-card top-story" data-genre="paranormal">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/paranormal-cover.jpeg" alt="Paranormal Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Paranormal</span>
+                            <h3>His Alpha</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A wolf howls beneath a full radiant moon.</p>
+                            <div class="card-actions">
+                                <a href="paranormal.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">22.1k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15. Fantasy Romance -->
+                <article class="book-card top-story" data-genre="fantasyromance">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/fantasyromance-cover.jpeg" alt="Fantasy Romance Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Fantasy Romance</span>
+                            <h3>Dragon's Heart</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Lovers standing in a gothic nocturnal kingdom.</p>
+                            <div class="card-actions">
+                                <a href="fantasyromance.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">23.5k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16 to 30 Books (Exclusively shown in Library) -->
+                <article class="book-card" data-genre="sliceoflife">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/sliceoflife-cover.jpeg" alt="Slice of Life Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Slice of Life</span>
+                            <h3>Just Another Day</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A quiet morning painting in a sunlit room.</p>
+                            <div class="card-actions">
+                                <a href="sliceoflife.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">8.6k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="school">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/school-cover.jpeg" alt="School Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">School</span>
+                            <h3>Class 4:12</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A student stands in golden classroom sunlight.</p>
+                            <div class="card-actions">
+                                <a href="school.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">9.3k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="sports">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/sports-cover.jpeg" alt="Sports Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Sports</span>
+                            <h3>Back in Game</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Jersey #11 holding a basketball at sunset.</p>
+                            <div class="card-actions">
+                                <a href="sports.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">7.7k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="war">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/war-cover.jpeg" alt="War Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">War</span>
+                            <h3>Letters War</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Envelopes swirl over golden wheat fields.</p>
+                            <div class="card-actions">
+                                <a href="war.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">6.7k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="urbanfantasy">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/urbanfantasy-cover.jpeg" alt="Urban Fantasy Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Urban Fantasy</span>
+                            <h3>City Shadows</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Harnessing magic atop a high-rise city.</p>
+                            <div class="card-actions">
+                                <a href="urbanfantasy.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">11.8k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="psychological">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/psychological-cover.jpeg" alt="Psychological Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Psychological</span>
+                            <h3>The Mind's Lie</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A face fragmented like shattered puzzle pieces.</p>
+                            <div class="card-actions">
+                                <a href="psychological.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">12.2k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="college">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/college-cover.jpeg" alt="College Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">College</span>
+                            <h3>Future Self</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Friends walk toward an autumn campus.</p>
+                            <div class="card-actions">
+                                <a href="college.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">13.1k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="youngadult">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/youngadult-cover.jpeg" alt="Young Adult Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Young Adult</span>
+                            <h3>Next Chapter</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A girl looks out at the sunset urban horizon.</p>
+                            <div class="card-actions">
+                                <a href="youngadult.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">13.9k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="family">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/family-cover.jpeg" alt="Family Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Family</span>
+                            <h3>Forever Us</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A family walks through golden meadow fields.</p>
+                            <div class="card-actions">
+                                <a href="family.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">10.0k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="faith">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/faith-cover.jpeg" alt="Faith Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Faith</span>
+                            <h3>Second Chance</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">Sunbeams break through clouds over a cross.</p>
+                            <div class="card-actions">
+                                <a href="faith.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">9.9k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="dystopian">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/dystopian-cover.jpeg" alt="Dystopian Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Dystopian</span>
+                            <h3>The Last Hope</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A survivor stands among ruined city debris.</p>
+                            <div class="card-actions">
+                                <a href="dystopian.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">11.4k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="timetravel">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/timetravel-cover.jpeg" alt="Time Travel Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Time Travel</span>
+                            <h3>The Time We Met</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A traveler before a glowing clock mechanism.</p>
+                            <div class="card-actions">
+                                <a href="timetravel.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">13.7k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="lightnovel">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/lightnovel-cover.jpeg" alt="Light Novel Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Light Novel</span>
+                            <h3>Ordinary Life</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A high school girl as flower petals blow past.</p>
+                            <div class="card-actions">
+                                <a href="lightnovel.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">14.1k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="romanticdrama">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/romanticdrama-cover.jpeg" alt="Romantic Drama Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Romantic Drama</span>
+                            <h3>Dangerous Touch</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">An intense gaze shared on a misty evening street.</p>
+                            <div class="card-actions">
+                                <a href="romanticdrama.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">13.3k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-genre="shortstory">
+                    <div class="book-card-inner">
+                        <div class="cover-box">
+                            <img src="images/shortstory-cover.jpeg" alt="Short Story Cover" class="book-cover">
+                        </div>
+                        <div class="book-info">
+                            <span class="genre-badge">Short Story</span>
+                            <h3>The Little Things</h3>
+                            <p class="author">Author: VV</p>
+                            <p class="synopsis">A coffee cup beside an open journal by a window.</p>
+                            <div class="card-actions">
+                                <a href="shortstory.html" class="btn-read">Read Story</a>
+                                <button class="btn-like"><span class="heart-icon">&#9825;</span> <span class="like-count">12.6k+</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ABOUT MODAL -->
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
