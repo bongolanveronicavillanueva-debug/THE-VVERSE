@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Chapter - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Young Adult</span>
+                <h1 class="story-main-title">Next Chapter</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A young woman looks out at the sunset urban horizon, ready to embark on a new journey toward self-discovery.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/youngadult-page.jpeg" alt="Next Chapter Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The New Horizon</h2>
+                
+                <p>Standing on the rooftop of her apartment building, Mia watched the sun set over the city, turning the skyline into a sea of amber and purple. Her packed suitcases sat by the door inside.</p>
+
+                <p>Tomorrow she was moving to a new city to pursue her art scholarship. She pulled out her sketchbook, drawing one final outline of the city she grew up in.</p>
+
+                <p>"Scared?" her friend Sam asked. Mia smiled, closing her sketchbook. "A little bit. But mostly... excited for the next chapter."</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

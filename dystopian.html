@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Hope - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Dystopian</span>
+                <h1 class="story-main-title">The Last Hope</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A lone scavenger carries the last green sprout on Earth through a ruined, toxic wasteland, discovering the true origin of the city's dome.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/dystopian-page.jpeg" alt="The Last Hope Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: Ashes and Green</h2>
+                
+                <p>Soot and toxic ash drifted through the ruined concrete streets of Sector 9 as I adjusted my air filtration mask. Towering rusted skyscrapers leaned like skeletal giants against a reddish, smog-filled sky. My name is Mara, a scavenger surviving in the ash lands outside the pristine Sanctuary Dome.</p>
+
+                <p>Inside my reinforced steel container sat a small green plant sprout—the last living plant verified by our underground resistance team. My mission was to deliver this plant to the Sanctuary Dome's central laboratory so they could restore oxygen to the earth.</p>
+
+                <p>I climbed over piles of rusted metal and reached the massive glass wall of the Sanctuary Dome. Using my plasma torch, I cut open an emergency maintenance hatch and crawled inside, breathing in the fresh, clean air of the paradise city.</p>
+
+                <p>I snuck into the high-security bio-lab, eager to place the green sprout inside the soil regenerator. But as I opened the central control computer, I uncovered a classified video file dated ten years ago.</p>
+
+                <p>On the screen, the Dome's Chancellor was giving an order: <em>"Deploy the toxic defoliant across the outer sectors. If the surface stays dead, the citizens inside the Dome will never attempt to leave, and our rule will remain absolute."</em></p>
+
+                <p>My blood ran cold as I realized the wasteland outside wasn't caused by a natural disaster—the government intentionally poisoned the world to keep everyone trapped inside.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

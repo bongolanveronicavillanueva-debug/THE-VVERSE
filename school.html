@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4:12 - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">School</span>
+                <h1 class="story-main-title">Class 4:12</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A student stays behind in an empty classroom after hours, discovering a strange time capsule note hidden beneath an old desk.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/school-page.jpeg" alt="Class 4:12 Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The Golden Hour</h2>
+                
+                <p>The 4:00 PM school bell rang across Oakridge High. While everyone else rushed home, I stayed behind in Room 204 to clean the chalkboards. Under desk #12, I found a rusted key and an old note dated ten years ago: *"Please help me, I am locked inside the basement storage room."*</p>
+
+                <p>I used the key to open the classroom's old wooden trapdoor, shining my flashlight down into the dark staircase. Resting on the bottom step was my own blue backpack.</p>
+
+                <p>Suddenly, the classroom door slammed shut, and a cold hand pushed me down the dark stairs as a whisper hissed: "Thanks for bringing back the key to my cell."</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

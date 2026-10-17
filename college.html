@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Self - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">College</span>
+                <h1 class="story-main-title">Future Self</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A graduating IT student works late on his capstone project in the university lab, receiving mysterious email logs from his future account.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/college-page.jpeg" alt="Future Self Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: Autumn Quad</h2>
+                
+                <p>The computer screen glowed in the pitch-black IT laboratory as I rubbed my tired eyes. It was 3:00 AM on a rainy Thursday, and the final capstone defense was scheduled for tomorrow afternoon. My name is Sam, a second-year Information Technology student, and I was on the verge of collapsing from exhaustion.</p>
+
+                <p>My capstone project was an automated network monitoring system designed to detect security breaches in real-time. I had been debugging the database connection for five straight hours without success.</p>
+
+                <p>"Just one more test run before I give up," I muttered, hitting the compile button on my keyboard.</p>
+
+                <p>Suddenly, a loud ping echoed through my headphones. A new email notification popped up on my desktop. The sender address was identical to my personal student email: <em>sam.veronica@bestlink.edu.ph</em>.</p>
+
+                <p>I blinked, confused. I opened the email thinking it was a glitch in my server script. The subject line read: <strong>"DO NOT SUBMIT THE CODE TOMORROW."</strong></p>
+
+                <p>I opened the message. It contained a short, frantic warning: <em>"Sam, if you present this exact network system to Professor Vance tomorrow, he will claim the patent as his own and kick you out of the degree program. Check line 204 in the server config—he secretly inserted his private key while helping you debug yesterday."</em></p>
+
+                <p>My heart thudded in my chest. Hands shaking, I quickly opened line 204 in my system code. Embedded deep inside the encryption module was an unauthorized admin bypass carrying Professor Vance's digital signature.</p>
+
+                <p>I stared at the screen in pure shock, realizing that someone—or my future self—had just saved my entire career from being stolen.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

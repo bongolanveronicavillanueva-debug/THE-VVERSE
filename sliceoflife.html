@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Another Day - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Slice of Life</span>
+                <h1 class="story-main-title">Just Another Day</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> An artist spends a sunny morning painting in her quiet room, finding peace until she notices something disturbing missing from her canvas.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/sliceoflife-page.jpeg" alt="Just Another Day Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: Morning Canvas</h2>
+                
+                <p>Golden morning sunbeams poured through the tall glass window of my small studio apartment, illuminating tiny specks of dust dancing lazily in the air. The pleasant smell of oil paint mixed with fresh lavender tea filled the room.</p>
+
+                <p>My name is Maya. After months of dealing with intense art block and stress, I decided to take a break from commercial commissions and paint something simple: a portrait of my cozy living room, complete with the afternoon light hitting my wooden coffee table.</p>
+
+                <p>I carefully dipped my fine brush into a blend of warm yellow and amber paint, filling in the details of the window frame. Everything felt so calm, so quiet, so perfectly normal.</p>
+
+                <p>A soft knock echoed at the door. My roommate, Leo, walked in holding a plate of fresh blueberry pancakes. "Breakfast is served, genius artist," he smiled, setting the plate on my side desk.</p>
+
+                <p>"Thanks, Leo. You're a lifesaver," I laughed, wiping paint from my cheek.</p>
+
+                <p>He leaned over to look at my canvas. His smile suddenly vanished, replaced by a confused and pale expression. "Maya... who is that sitting on the couch in your painting?"</p>
+
+                <p>I frowned, turning back to my artwork. "What do you mean? I just painted the empty living room."</p>
+
+                <p>I stared closer at the canvas. In the corner of the painting, sitting right on my drawn couch, was the silhouette of a dark, tall figure staring directly back at the viewer. And the paint forming the figure wasn't dry yellow—it was fresh, dripping black ink that was slowly spreading across the canvas on its own.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

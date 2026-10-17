@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unspoken Words - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Drama</span>
+                <h1 class="story-main-title">Unspoken Words</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> An estranged brother and sister meet at their childhood home to pack up their late father's belongings, unearthing a painful truth.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/drama-page.jpeg" alt="Unspoken Words Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The Attic Box</h2>
+                
+                <p>Rain tapped quietly against the dusty attic window of our old family home in Willow Creek. Dust motes floated in the dim light as I pulled open another cardboard box labeled '1998 memories'. My name is Hannah, and standing across the room was my older brother, David.</p>
+
+                <p>We hadn't spoken a word to each other in seven years. Ever since our father fell ill, David left for the capital to build his career, leaving me alone to take care of the house and hospital bills. I harbored deep resentment toward him for abandoning us when we needed him most.</p>
+
+                <p>"We need to finish clearing the attic today before the real estate agent arrives," David said quietly, his voice hollow as he taped up a box of old vinyl records.</p>
+
+                <p>"You always were good at rushing things when it comes to leaving this house," I snapped bitterly without looking up.</p>
+
+                <p>David paused, letting out a long, heavy breath, but didn't argue back. Deep inside the wooden trunk, I found a thick, sealed binder filled with bank transfer receipts and medical logs dated over the last seven years.</p>
+
+                <p>I opened it, expecting to find father's old debt statements. Instead, every single receipt showed monthly payments of thousands of dollars transferred directly from David’s personal account to the hospital to keep father's life support running.</p>
+
+                <p>Tears welled up in my eyes as I realized the heartbreaking truth—David hadn't abandoned us. He moved away and worked three grueling jobs in silence just to pay for the treatments that kept our father alive for seven years.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

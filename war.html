@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letters War - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">War</span>
+                <h1 class="story-main-title">Letters War</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> Envelopes swirl over golden wheat fields as a young soldier writes his final love letter before the frontlines shift.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/war-page.jpeg" alt="Letters War Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The Final Envelope</h2>
+                
+                <p>The distant thunder of artillery echoed across the golden wheat fields of Oakhaven, disturbing the peaceful quiet of the countryside. Sitting on an ammunition crate beside his dugout trench, Arthur smoothed out a crumpled piece of parchment using his dirt-stained fingers.</p>
+
+                <p>He dipped his fountain pen into a small bottle of ink, watching his hand tremble slightly as wind blew dry leaves and loose envelopes across the soil.</p>
+
+                <p>*"Dearest Eleanor,"* Arthur wrote, his words carefully penned under the pale afternoon sun. *"If this letter reaches your hands before I do, know that every step I took across these ruined fields was guided by the hope of returning to your side."*</p>
+
+                <p>A loud bugle call resonated from the command tent, signaling the regiment to assemble. Arthur carefully folded the parchment, sealed it inside a brown envelope, and handed it to the young messenger boy running past the trenches.</p>
+
+                <p>"Deliver it to the valley post, kid," Arthur said, adjusting his steel helmet as he stood up to face the horizon.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="index.html" class="btn-back-catalog">← Back to Library / Home</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- ABOUT MODAL -->
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

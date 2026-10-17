@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vanishing Note - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Mystery</span>
+                <h1 class="story-main-title">The Vanishing Note</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A young detective investigates an old abandoned manor during a heavy rainstorm, searching for a missing professor and a secret code that was never solved.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/mystery-page.jpeg" alt="The Vanishing Note Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The Crimson Threshold</h2>
+                
+                <p>The heavy rain was pounding relentlessly against the broken windows of Blackwood Manor. I held my flashlight tight, pointing the light beam through the thick dust in the air. Every time I took a step on the old wooden floorboards, a loud creak echoed throughout the silent house.</p>
+
+                <p>My name is Detective Julian. I’ve been working on cold cases for three years, but this one was different. Ten years ago, Professor Samuel Vance—a genius who was studying secret codes—suddenly vanished from this exact mansion. The police back then found no forced entry, no signs of struggle, and no body. It was like he just dissolved into thin air.</p>
+
+                <p>At the end of the grand corridor stood a heavy iron door unlike any other in the estate. Etched into its rusted surface was a strange, luminescent red cipher that pulsed weakly in the dark, as if responding to human breath.</p>
+
+                <p>"I wouldn't touch that if I were you, Detective," a cold voice suddenly sounded from behind me.</p>
+
+                <p>I quickly spun around, holding my flashlight high. Standing near the top of the stairs was a person wearing a long black coat, their face hidden under a deep hood. "Where is Professor Vance?" I demanded.</p>
+
+                <p>"The Professor paid the ultimate price for curiosity," the figure replied softly. "Check your coat pocket, Julian." I pulled out a blank paper from my pocket, and glowing red words slowly appeared: *'The door itself is the trap.'*</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

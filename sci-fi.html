@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow's Echoes - THE V-VERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <span class="brand-title">THE V-VERSE</span>
+            <button id="theme-toggle" class="theme-btn"><span class="theme-icon">🌑</span> Dark Mode</button>
+        </div>
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html#library"><button>Library</button></a>
+            <button id="btn-about-modal">About</button>
+        </nav>
+    </header>
+
+    <main class="story-reading-main">
+        <article class="story-container">
+            <div class="story-header-info">
+                <span class="genre-badge">Sci-Fi</span>
+                <h1 class="story-main-title">Tomorrow's Echoes</h1>
+                <p class="story-author">Author: VV</p>
+                <p class="story-synopsis-box"><strong>Synopsis:</strong> A temporal investigator intercepts audio transmissions sent from twenty-four hours in the future, only to hear his own voice broadcasting a desperate warning.</p>
+            </div>
+
+            <div class="story-cover-banner">
+                <img src="images/sci-fi-page.jpeg" alt="Tomorrow's Echoes Page" class="reading-banner-img">
+            </div>
+
+            <div class="chapter-content-box">
+                <h2 class="chapter-title">Chapter 1: The Future Signal</h2>
+                
+                <p>The blue audio spectrum waves bounced rapidly across the holograph monitors inside the Chronos Station control room. Rain tapped heavily against the reinforced glass dome of Sector 7, but my entire attention was locked onto the frequency speaker in front of me.</p>
+
+                <p>My name is Vance. For three years, I’ve worked as a temporal signals analyst. My job is simple: monitor sub-space frequencies for any unnatural audio bleeds coming from tomorrow's timeline. Most of the time, it's just white noise or minor static caused by satellite shifts.</p>
+
+                <p>But tonight at exactly 11:42 PM, a clear, unencrypted audio signal cut straight through our classified radio channels. It was coming from exactly 24 hours into the future.</p>
+
+                <p>"Isolate the frequency and clean the static," I instructed the automated system, leaning closer to my desk.</p>
+
+                <p>The audio cleared up, filling the quiet room with heavy breathing, footsteps running on wet metal, and the sound of distant sirens. Then, a raspy voice spoke into the recorder:</p>
+
+                <p><em>"If anyone at Chronos Station is receiving this... do not trust Director Hayes. He isn't trying to stabilize the temporal core. He's weaponizing it. I'm hiding in the subterranean vault, but I don't have much time left—"</em></p>
+
+                <p>My blood ran cold. I knew that voice. It was my own voice.</p>
+
+                <p>Hand trembling, I replayed the signal. Before I could process what I was listening to, the heavy steel security doors behind me hissed open. Director Hayes stepped into the room holding a silenced pistol, a dark smirk on his face.</p>
+
+                <p>"You always were too good at your job, Vance," Hayes said calmly. "It's a shame you listened to tomorrow's broadcast today."</p>
+
+                <p>I backed up against the console, realizing with absolute horror that by trying to investigate the signal, I had just triggered the exact sequence of events that led to my own future broadcast.</p>
+            </div>
+
+            <div class="story-footer-nav">
+                <a href="javascript:history.back()" class="btn-back-animated">← BACK</a>
+            </div>
+        </article>
+    </main>
+
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>About THE V-VERSE</h2>
+            <p>THE V-VERSE is an exclusive fictional universe authored by VV. It encompasses 30 original storybooks crafted with immersive visual art and narrative depths.</p>
+            <ul class="modal-features">
+                <li><span class="modal-bullet"></span> 30 Original Single-Chapter Tales</li>
+                <li><span class="modal-bullet"></span> Top 15 Trending Stories Featured on Home</li>
+                <li><span class="modal-bullet"></span> Complete Library Access with Live Genre Filtering</li>
+                <li><span class="modal-bullet"></span> Dynamic Light and Dark Mode Engine</li>
+            </ul>
+            <button id="btn-close-modal" class="btn-close-modal">Close Window</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE V-VERSE. Crafted by Author VV.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
